@@ -20,10 +20,9 @@ export const FaqsList: FaqsListProps[] = [
       "We keep you in the loop at every stage of the process. Upon creating a mockup of your website, we share it with you. Once approved, we proceed with the development phase.",
   },
   {
-    question:
-      "I don’t have logo and branding for my company yet, can I still submit a project?",
+    question: "Can I submit a project without branding for my company?",
     answer:
-      "Absolutely! No logo, no problem. We'll craft a premium logo for your new site. Need social media setup? We've got you covered.",
+      "Absolutely! You can submit your project without a logo or branding. We'll create a logo and set up your social media for a small additional fee.",
   },
   {
     question: "How is the cost determined for your services?",
