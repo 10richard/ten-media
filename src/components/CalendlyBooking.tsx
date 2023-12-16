@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 
 const CalendlyBooking = () => {
   return (
-    <section className="flex flex-col items-center py-[120px]">
+    <section id="book-call" className="flex flex-col items-center py-[120px]">
       <SectionHeading
         heading={"Book a Call"}
         subheading={"Let's chat about your project"}

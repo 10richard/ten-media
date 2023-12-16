@@ -44,7 +44,7 @@ const Navbar = () => {
           </a>
         </ul>
         <a
-          href="calendly-booking-link"
+          href="#book-call"
           className="border border-white rounded-lg bg-transparent px-10 py-2.5 relative hover:bg-primary hover:-translate-y-1 duration-500"
         >
           Free Consultation
