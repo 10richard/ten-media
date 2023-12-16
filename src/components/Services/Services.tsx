@@ -21,7 +21,7 @@ const Services = () => {
         <ServicesContainer
           service={"Development"}
           text={
-            "We pride ourselves on a commitment to craftsmanship, and that means steering clear of generic website builders. Every website we create is meticulously crafted with a responsive design, ensuring your content thrives on every screen size."
+            "We take pride in our commitment to craftsmanship, steering clear of generic website builders. Each website we create is meticulously crafted with a responsive design, ensuring your content thrives seamlessly on every screen size."
           }
           img={developmentIcon.src}
           altText={"TenMedia Website Development icon"}
