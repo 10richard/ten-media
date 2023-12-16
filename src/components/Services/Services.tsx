@@ -13,7 +13,7 @@ const Services = () => {
         <ServicesContainer
           service={"Design"}
           text={
-            "Our expert team combines creativity and functionality to craft visually stunning and user-friendly websites that engages and converts visitors. From concept to launch, we tailor each design to reflect your unique identity."
+            "We prioritize both simplicity and functionality to guarantee a website design that not only captivates but converts."
           }
           img={designIcon.src}
           altText={"TenMedia Website Design icon"}
@@ -21,7 +21,7 @@ const Services = () => {
         <ServicesContainer
           service={"Development"}
           text={
-            "We take pride in our commitment to craftsmanship, steering clear of generic website builders. Each website we create is meticulously crafted with a responsive design, ensuring your content thrives seamlessly on every screen size."
+            "Each website is crafted with responsiveness and SEO in mind, ensuring your content thrives seamlessly online."
           }
           img={developmentIcon.src}
           altText={"TenMedia Website Development icon"}
@@ -29,7 +29,7 @@ const Services = () => {
         <ServicesContainer
           service={"Maintenance"}
           text={
-            "Swift content updates, seamless hosting, and proactive security measures ensure your website stays dynamic, performs optimally, and remains secure. Focus on your business; we've got the technicalities covered."
+            "Swift content updates, seamless hosting, and proactive security measures keep your website dynamic, optimized, and secure."
           }
           img={maintenanceIcon.src}
           altText={"TenMedia Website Maintenance icon"}

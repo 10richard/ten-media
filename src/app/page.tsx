@@ -1,5 +1,5 @@
 import CalendlyBooking from "@/components/CalendlyBooking";
-import Faqs from "@/components/Faqs";
+import Faqs from "@/components/Faqs/Faqs";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
