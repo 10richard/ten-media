@@ -1,21 +1,24 @@
 "use client";
 
 import tenmediaLogo from "../assets/tenmedia-logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+  useEffect(() => {
+    const changeBackground = () => {
+      if (window.scrollY >= 80) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
 
-  window.addEventListener("scroll", changeBackground);
+    window.addEventListener("scroll", changeBackground);
+  });
+
   return (
     <nav
       className={`flex justify-between items-center w-full py-5 px-12 fixed top-0 z-10 duration-300 ${
