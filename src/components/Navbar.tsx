@@ -7,17 +7,19 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
-  useEffect(() => {
-    const changeBackground = () => {
-      if (window.scrollY >= 80) {
-        setNavbar(true);
-      } else {
-        setNavbar(false);
-      }
-    };
+  if (typeof window !== "undefined") {
+    useEffect(() => {
+      const changeBackground = () => {
+        if (window.scrollY >= 80) {
+          setNavbar(true);
+        } else {
+          setNavbar(false);
+        }
+      };
 
-    window.addEventListener("scroll", changeBackground);
-  });
+      window.addEventListener("scroll", changeBackground);
+    }, []);
+  }
 
   return (
     <nav
