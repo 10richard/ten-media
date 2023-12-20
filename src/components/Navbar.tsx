@@ -95,7 +95,7 @@ const Navbar = () => {
         <div
           className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1150px]:hidden bg-opacity-75 backdrop-blur-md bg-black text-lg ${
             toggle ? "flex-col" : "hidden"
-          } `}
+          } ${navbar ? "bg-black bg-opacity-75" : ""}`}
         >
           <div className="flex justify-end pr-10 pt-8 mb-10">
             <button
