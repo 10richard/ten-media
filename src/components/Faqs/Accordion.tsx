@@ -12,15 +12,15 @@ const Accordion = ({ question, answer }: AccordionProps) => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <div className="grid gap-2 w-[700px]">
+    <div className="grid gap-2">
       <button
         type="button"
         className="flex justify-between items-center"
         onClick={() => setToggle((toggle) => !toggle)}
       >
-        <div className="grid text-left gap-3 mt-2">
+        <div className="grid text-left gap-3 mt-2 min-[550px]:mr-[135px] mr-[50px]">
           <p className="font-bold text-lg">{question}</p>
-          <p className={`${toggle ? "" : "hidden"} mr-[135px]`}>{answer}</p>
+          <p className={`${toggle ? "" : "hidden"}`}>{answer}</p>
         </div>
 
         <img

@@ -8,10 +8,10 @@ const Faqs = () => {
   return (
     <section
       id="faqs"
-      className="flex flex-col items-center py-[120px] bg-[#F8F9FC]"
+      className="grid justify-center py-[120px] px-10 bg-[#F8F9FC]"
     >
       <SectionHeading heading={"FAQs"} />
-      <div>
+      <div className="max-w-[700px] self-center">
         {FaqsList.map((faq, idx) => (
           <Accordion key={idx} question={faq.question} answer={faq.answer} />
         ))}
