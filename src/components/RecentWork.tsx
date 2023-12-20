@@ -5,7 +5,7 @@ const RecentWork = () => {
   return (
     <section
       id="recent-work"
-      className="flex justify-center py-[120px] bg-[#F8F9FC]"
+      className="text-center flex justify-center py-[120px] px-10 bg-[#F8F9FC]"
     >
       <SectionHeading
         heading={"Recent Work"}

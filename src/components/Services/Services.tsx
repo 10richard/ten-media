@@ -7,9 +7,12 @@ import maintenanceIcon from "../../assets/maintenance-icon.svg";
 const Services = () => {
   // Add later? - SEO, Social Media Integration, **CRO**
   return (
-    <section id="services" className="flex flex-col items-center py-[120px]">
+    <section
+      id="services"
+      className="text-center flex flex-col items-center py-[120px] px-10"
+    >
       <SectionHeading heading={"Our Services"} subheading={"What we do."} />
-      <div className="flex justify-center flex-wrap gap-8 max-w-[1280px] px-10">
+      <div className="flex justify-center flex-wrap gap-8 max-w-[1280px] w-5/6">
         <ServicesContainer
           service={"Design"}
           text={

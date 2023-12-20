@@ -10,7 +10,7 @@ const CalendlyBooking = () => {
         subheading={"Let's chat about your project"}
       />
       <InlineWidget
-        styles={{ height: "750px", width: "100%", marginTop: "-50px" }}
+        styles={{ height: "750px", width: "100%" }}
         url="https://calendly.com/tenmedia-co/30min?month=2023-12"
       />
     </section>
