@@ -11,7 +11,7 @@ const Hero = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="text-white flex flex-col min-[1070px]:max-w-[950px] w-3/4 min-[1070px]:absolute left-[15%] top-[30%]">
+      <div className="text-white flex flex-col min-[1070px]:max-w-[950px] w-[85%] min-[1070px]:absolute left-[15%] top-[30%]">
         <div className="flex flex-col max-[1070px]:items-center gap-7 mb-14">
           <h1 className="min-[1070px]:text-7xl min-[940px]:text-6xl text-4xl font-extrabold leading-tight max-[1070px]:max-w-[600px]">
             Crafting Powerful Online Presences for{" "}
