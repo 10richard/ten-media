@@ -36,7 +36,7 @@ const Navbar = () => {
           />
         </a>
       </div>
-      <div className="text-white flex items-center gap-12 font-poppins">
+      <div className="text-white flex items-center gap-12 font-poppins max-[980px]:hidden">
         <ul className="flex gap-12">
           <a href="#services" className="hover:text-primary duration-300">
             <li>Services</li>
@@ -57,6 +57,102 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger menu */}
+      <div className="min-[981px]:hidden">
+        <button onClick={() => setToggle(!toggle)}>
+          {toggle ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="white"
+              className="w-8 h-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="white"
+              className="w-8 h-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          )}
+        </button>
+
+        <div
+          className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1150px]:hidden bg-opacity-75 backdrop-blur-md bg-black text-lg ${
+            toggle ? "flex-col" : "hidden"
+          } `}
+        >
+          <div className="flex justify-end pr-10 pt-8 mb-10">
+            <button
+              onClick={() => {
+                setToggle((toggle) => !toggle);
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="white"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul className="text-white flex flex-col items-center gap-8 mb-16">
+            <li>
+              <a
+                className="hover:text-seaserpent duration-300"
+                href="#services"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-seaserpent duration-300"
+                href="#recent-work"
+              >
+                Recent Work
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-seaserpent duration-300" href="#faqs">
+                Faqs
+              </a>
+            </li>
+            <li>
+              <a
+                className="bg-primary px-5 py-2.5 rounded-xl"
+                href="#book-call"
+              >
+                Book a Call
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 };
