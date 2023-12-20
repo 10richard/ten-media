@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center w-full py-5 px-12 fixed top-0 z-10 duration-300 ${
+      className={`flex justify-between items-center w-full py-5 min-[580px]:px-12 px-5 fixed top-0 z-10 duration-300 ${
         navbar ? "bg-black bg-opacity-75" : ""
       }`}
     >
@@ -31,7 +31,7 @@ const Navbar = () => {
         <a href="#">
           <img
             src={tenmediaLogo.src}
-            className="w-[200px]"
+            className="max-w-[200px] w-[75%]"
             alt="TenMedia logo"
           />
         </a>
