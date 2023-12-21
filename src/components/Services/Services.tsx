@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="text-center flex flex-col items-center py-[120px] px-10"
+      className="flex flex-col items-center py-[120px] px-10"
     >
       <SectionHeading heading={"Our Services"} subheading={"What we do."} />
       <div className="flex justify-center flex-wrap gap-8 max-w-[1280px] w-5/6">
