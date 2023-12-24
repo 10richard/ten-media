@@ -145,7 +145,8 @@ const Navbar = () => {
             <li>
               <a
                 className="bg-primary px-5 py-2.5 rounded-xl"
-                href="#book-call"
+                href="https://calendly.com/tenmedia-co/30min"
+                target="_blank"
               >
                 Book a Call
               </a>
